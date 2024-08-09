@@ -1,0 +1,184 @@
+/*--------- FUENTES ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*--------- RESET -----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/*--------- VARIABLES ---------*/
+
+:root {
+    --background: #c1c1c2;
+    --text: #000000;
+    --active: #FF0099;
+    --bg-box: #FFFFFF;
+    --h2-color: #151A41;
+}
+
+/*-------- CAJAS ----------*/
+
+.container-feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.caja-items {
+    width: 460px;
+    height: 491px;
+    border-radius: 10px;
+    background-color: var(--bg-box);
+    padding: 20px;
+}
+
+.items {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.salir {
+    position: relative;
+    left: 190px;
+    bottom: 40px;
+    color: rgb(167, 164, 164);
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 0.5px;
+    border-color: rgb(219, 216, 216);
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.items h2 {
+    font-size: 18px;
+    color: var(--h2-color);
+    text-align: start;
+    position: relative;
+    bottom: 50px;
+    right: 5px;
+}
+
+/*---------- Calificacion --------*/
+
+.contenedor-calificacion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    height: 50px;
+    position: relative;
+    bottom: 40px;
+}
+
+.caja-calificacion {
+    width: 50px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(219, 216, 216);
+    background-color: transparent;
+}
+
+.caja-calificacion p {
+    font-weight: 600;
+}
+
+.caja-calificacion:hover {
+    color: white;
+    background-color: var(--active);
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--active);
+    color: white;
+}
+
+/*--------- CALIFIACION TEXTO --------*/
+.contenedor-p-calificacion {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: bold;
+    width: 90%;
+    position: relative;
+    bottom: 40px;
+}
+
+.contenedor-p-calificacion p span {
+    display: block;
+}
+
+.p-right {
+    text-align: end;
+}
+
+/*----------- TERMINOS -----------*/
+.terminos {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    bottom: 30px;
+    right: 50px;
+    padding: 10px 0;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/*-------- LINEA ---------*/
+hr {
+    width: 90%;
+    position: relative;
+    bottom: 20px;
+    border-color: rgb(219, 216, 216);
+    border-style: solid;
+    border-width: 0.5px;
+    background-color: transparent;
+}
+
+/*---------- BOTON ---------*/
+.caja-siguiente {
+    width: 90%;
+    height: 60px;
+    cursor: pointer;
+    border-color: rgb(219, 216, 216);
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.siguiente {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--h2-color);
+}
